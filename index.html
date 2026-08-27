@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSIS Nerielle | SMA Ignatius Global School Palembang</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/main.css">
+
+    <head>
+    <!-- Favicon standar (.ico atau .png) -->
+    <link rel="icon" type="image/png" href="Properties/images/Logo.png">
+    
+    <!-- Untuk perangkat Apple/iOS (opsional) -->
+    <link rel="apple-touch-icon" href="Properties/images/Logo.png">
+</head>
+</head>
+<body>
+
+    <!-- NAVIGASI UTAMA -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <img src="Properties/images/Logo.png" alt="Nerielle Logo" class="nav-brand-logo">
+                <span>NERIELLE</span>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">Tentang Kami</a>
+                <a href="#event" class="nav-link">Event & Proker</a>
+            </nav>
+
+            <div class="nav-right">
+                <!-- Satu Tombol Utama (Responsif tanpa Duplikasi) -->
+                <button class="nav-btn nav-btn-bubble" onclick="openModal('modalDaftar')">
+                    <span class="btn-bubbles">
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                    </span>
+                    <img src="Properties/images/Logo.png" alt="Logo Nerielle" class="btn-logo-img">
+                    <span class="btn-text">Daftar Event</span>
+                </button>
+
+                <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+
+        <!-- 1. HERO SECTION -->
+        <section id="home" class="screen-section hero-section">
+            <div class="hero-content">
+                <div class="hero-logo-wrapper">
+                    <img src="Properties/images/Logo.png" alt="Logo Utama Tim Nerielle" class="hero-large-logo">
+                </div>
+
+                <div class="hero-badge">
+                    OSIS SMA Ignatius Global School
+                </div>
+                <h1 class="hero-title">NERIELLE</h1>
+                <p class="hero-tagline">"Side by Side, Tide by Tide"</p>
+                <p class="ai-credit hero-desc"><i class="fa-solid fa-robot"></i>Website ini menggunakan AI untuk <i>Coding</i>.</p>
+                
+                <div class="hero-actions">
+                    <a href="#about" class="btn-primary">
+                        <i class="fa-solid fa-users"></i> Profil Organisasi
+                    </a>
+                    <a href="#event" class="btn-secondary">
+                        <i class="fa-solid fa-calendar-star"></i> Program Kerja & Event
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. ABOUT US SECTION -->
+        <section id="about" class="screen-section about-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="sub-title">TENTANG KAMI</span>
+                    <h2>Mengenal Tim Nerielle</h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card glass-card">
+                        <div class="card-icon"><i class="fa-solid fa-landmark"></i></div>
+                        <h3>Identitas Organisasi</h3>
+                        <p><strong>Nerielle</strong> adalah kabinet OSIS SMA Ignatius Global School Palembang yang berfokus pada pengembangan potensi siswa dan keharmonisan lingkungan sekolah.</p>
+                    </div>
+                    <div class="about-card glass-card">
+                        <div class="card-icon"><i class="fa-solid fa-compass"></i></div>
+                        <h3>Visi Utama</h3>
+                        <p>Mewujudkan OSIS yang responsif, inklusif, dan adaptif dalam membentuk karakter siswa yang berintegritas serta berdaya saing.</p>
+                    </div>
+                    <div class="about-card glass-card">
+                        <div class="card-icon"><i class="fa-solid fa-diagram-project"></i></div>
+                        <h3>Fokus Operasional</h3>
+                        <p>Mengintegrasikan fungsi internal dan hubungan publik untuk menyelenggarakan kegiatan akademik serta non-akademik yang berkualitas.</p>
+                    </div>
+                </div>
+
+                <div class="core-values-wrapper">
+                    <h3 class="values-title">Nilai Utama Nerielle</h3>
+                    <div class="values-grid">
+                        <div class="value-item"><i class="fa-solid fa-gem"></i> <span>Integritas</span></div>
+                        <div class="value-item"><i class="fa-solid fa-lightbulb"></i> <span>Inovasi</span></div>
+                        <div class="value-item"><i class="fa-solid fa-handshake"></i> <span>Sinergi</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. EVENT HUB SECTION -->
+        <section id="event" class="screen-section event-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="sub-title">PROGRAM KERJA UNGGULAN</span>
+                    <h2>Event Hub & Portal Aethelis</h2>
+                </div>
+                
+                <div class="event-wrapper">
+                    <div class="event-featured-card glass-card">
+                        
+                        <!-- BANNER RESPONSIVE HP & DESKTOP -->
+                        <div class="event-large-banner">
+                            <video id="bannerVideo" autoplay muted loop playsinline poster="Properties/images/Aethelis.PNG">
+                                <source src="Properties/videos/banner-event.mp4" type="video/mp4">
+                                <img src="Properties/images/Aethelis.PNG" alt="Aethelis Main Banner">
+                            </video>
+                            <div class="banner-overlay">
+                                <span class="event-status-badge"><i class="fa-solid fa-calendar-check"></i> 9 - 10 April 2027</span>
+                                <span class="event-location-badge"><i class="fa-solid fa-location-dot"></i> Gedung Mayor Ruslan SMA Ignatius Global School</span>
+                            </div>
+                        </div>
+
+                        <div class="event-info-container">
+                            
+                            <!-- Countdown Timer -->
+                            <div class="event-countdown-box">
+                                <h4><i class="fa-solid fa-clock"></i> Hitung Mundur Acara:</h4>
+                                <div class="countdown-timer" id="countdownTimer">
+                                    <div class="time-block"><span id="days">00</span><label>Hari</label></div>
+                                    <div class="time-block"><span id="hours">00</span><label>Jam</label></div>
+                                    <div class="time-block"><span id="minutes">00</span><label>Menit</label></div>
+                                    <div class="time-block"><span id="seconds">00</span><label>Detik</label></div>
+                                </div>
+                            </div>
+
+                            <!-- Deskripsi & Filosofi -->
+                            <div class="event-header-info">
+                                <h3>AETHELIS: Graduation Camp Angkatan 27</h3>
+                                <p class="philosophy-text">
+                                    <i class="fa-solid fa-quote-left"></i>
+                                    Nama <strong>AETHELIS</strong> berasal dari gabungan kata <strong>"Aethel"</strong> (Mulia) dan <strong>"Chrysalis"</strong> (Kepompong), melambangkan proses transformasi mulia angkatan 27 menuju jenjang berikutnya.
+                                </p>
+                            </div>
+
+                            <!-- Photobooth & Link Dokumen -->
+                            <div class="photobooth-card-box">
+                                <div class="photobooth-content">
+                                    <div class="photobooth-icon">
+                                        <i class="fa-solid fa-camera-retro"></i>
+                                    </div>
+                                    <div class="photobooth-text">
+                                        <h4>Cari Foto Photobooth Kamu</h4>
+                                        <p>Hasil foto photobooth kamu telah disimpan di dalam google drive.</p>
+                                    </div>
+                                </div>
+                                <a href="https://drive.google.com/drive/folders/1jWtZvU_kR6-MQxdrDEOxfu7nmVonb-dE?usp=sharing" id="photoboothLink" target="_blank" class="btn-photobooth">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Buka Hasil Photobooth
+                                </a>
+                            </div>
+
+                            <!-- PENGHITUNG PENDAFTAR REALTIME (TANPA MAX QUOTA) -->
+                            <div class="quota-tracker-box">
+                                <div class="quota-info-simple">
+                                    <i class="fa-solid fa-users"></i>
+                                    <span>Total Peserta Terdaftar:</span>
+                                    <strong id="quotaText">Memuat data...</strong>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Accordion -->
+                            <div class="event-faq-container">
+                                <h4><i class="fa-solid fa-circle-question"></i> Pertanyaan Sering Diajukan (FAQ)</h4>
+                                <div class="faq-accordion">
+                                    <div class="faq-item">
+                                        <button class="faq-question">Siapa saja yang wajib mengikuti acara ini? <i class="fa-solid fa-chevron-down"></i></button>
+                                        <div class="faq-answer"><p>Seluruh siswa-siswi kelas XII Angkatan 27 SMA Ignatius Global School Palembang.</p></div>
+                                    </div>
+                                    <div class="faq-item">
+                                        <button class="faq-question">Apakah Surat Izin Orang Tua wajib dikumpulkan? <i class="fa-solid fa-chevron-down"></i></button>
+                                        <div class="faq-answer"><p>Ya. Surat izin diunduh, dicetak, ditandatangani orang tua, dan dibawa saat registrasi.</p></div>
+                                    </div>
+                                    <div class="faq-item">
+                                        <button class="faq-question">
+                                            Bagaimana rute untuk kegiatan jalan pagi? 
+                                            <i class="fa-solid fa-chevron-down"></i>
+                                        </button>
+                                        <div class="faq-answer">
+                                            <p>
+                                                Rute jalan pagi akan melintasi area sekitar Gedung Mayor SMA Ignatius Global School.
+                                                <button class="link-shortcut" onclick="openModal('modalRuteMap')">Detail selengkapnya</button>.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Action Buttons -->
+                            <div class="event-card-actions">
+                                <button class="btn-primary" onclick="openModal('modalDaftar')">
+                                    <i class="fa-solid fa-user-plus"></i> Form Pendaftaran
+                                </button>
+                                <button class="btn-outline" onclick="openModal('modalPerformance')">
+                                    <i class="fa-solid fa-circle-play"></i> Video Performance
+                                </button>
+                                <button class="btn-outline" onclick="openModal('modalDetail')">
+                                    <i class="fa-solid fa-file-pdf"></i> Panduan
+                                </button>
+                                <!-- TABEL/TOMBOL CEK STATUS DI EVENT SECTION -->
+                                <button class="btn-outline" onclick="openModal('modalCekStatus')">
+                                    <i class="fa-solid fa-magnifying-glass"></i> Cek Status Pendaftaran
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-wrapper">
+            <div class="footer-col footer-brand">
+                <div class="brand-logo">
+                    <img src="Properties/images/Logo.png" alt="Nerielle Logo" class="footer-logo-img">
+                    <h3>NERIELLE</h3>
+                </div>
+                <p>OSIS SMA Ignatius Global School Palembang.</p>
+                <p class="tagline">"Side by Side, Tide by Tide"</p>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">Navigasi</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#about">Tentang Kami</a></li>
+                    <li><a href="#event">Event & Proker</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">Sekretariat</h4>
+                <div class="footer-info-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>SMA Ignatius Global School, Palembang</span>
+                </div>
+            </div>
+
+            <!-- PERBAIKAN SOSMED: TIKTOK, INSTAGRAM, LINE, GITHUB -->
+            <div class="footer-col">
+                <h4 class="footer-title">Kanal Resmi</h4>
+                <div class="social-grid">
+                    <a href="https://instagram.com" target="_blank" class="social-card">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://tiktok.com" target="_blank" class="social-card">
+                        <i class="fa-brands fa-tiktok"></i>
+                        <span>TikTok</span>
+                    </a>
+                    <a href="https://line.me" target="_blank" class="social-card">
+                        <i class="fa-brands fa-line"></i>
+                        <span>LINE</span>
+                    </a>
+                    <a href="https://github.com" target="_blank" class="social-card">
+                        <i class="fa-brands fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <p>&copy; 2026 OSIS Nerielle SMA IGS. All Rights Reserved.</p>
+            <p class="ai-credit"><i class="fa-solid fa-robot"></i> Website ini dirancang & dikembangkan dengan bantuan AI.</p>
+        </div>
+    </footer>
+
+    <!-- MODAL POP-UP PERFORMANCE VIDEOS (BISA DI-INPUT SENDIRI) -->
+    <div id="modalPerformance" class="modal-overlay closingEvent">
+        <div class="modal-card modal-large-card">
+            <div class="modal-header">
+                <div class="modal-brand">
+                    <img src="Properties/images/Logo.png" alt="Logo" class="modal-logo">
+                    <span>GALERI PERFORMANCE</span>
+                </div>
+                <img class="exit-btn" src="WebAttributes/exit.svg" alt="Exit" onclick="closeModal('modalPerformance')">
+            </div>
+            <div class="modal-body">
+                <h2 class="form-title text-center">Video Penampilan Event</h2>
+                <p class="text-subtitle text-center">Saksikan kemeriahan dan aksi penampilan spesial dalam acara Aethelis.</p>
+
+                <!-- DAFTAR VIDEO PERFORMANCE (EDIT ATAU TAMBAH DI SINI) -->
+                <div class="performance-grid">
+                    
+                    <!-- ITEM VIDEO 1 -->
+                    <div class="performance-item">
+                        <div class="video-wrapper">
+                            <!-- OPSI A: Menggunakan File Video MP4 -->
+                            <video controls>
+                                <source src="Properties/videos/performance_silat.mp4" type="video/mp4">
+                                Browser Anda tidak mendukung pemutaran video.
+                            </video>
+                            <!-- OPSI B: Jika menggunakan Youtube Embed, buka komen di bawah & tutup tag video di atas:
+                            <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe> 
+                            -->
+                        </div>
+                        <div class="performance-info">
+                            <h4>Performance Pencak Silat</h4>
+                            <p>Penampilan pencak silat dari Club Pencak Silat IGS.</p>
+                        </div>
+                    </div>
+
+                    <!-- ITEM VIDEO 2 -->
+                    <div class="performance-item">
+                        <div class="video-wrapper">
+                            <video controls>
+                                <source src="Properties/videos/performance-nadinmakayla-Hanya_Untukmu-Ten2five.mp4" type="video/mp4">
+                                Browser Anda tidak mendukung pemutaran video.
+                            </video>
+                        </div>
+                        <div class="performance-info">
+                            <h4>Sing Along (Hanya Untukmu - Ten2five)</h4>
+                            <p>Sesi penampilan musik "Hanya Untukmu - Ten2five" dari Nadine Makayla.</p>
+                        </div>
+                    </div> 
+                    
+                    <!-- ITEM VIDEO 3 -->
+                    <div class="performance-item">
+                        <div class="video-wrapper">
+                            <video controls>
+                                <source src="Properties/videos/performance-nadinmakayla-Jangan-Marion_Jola.mp4" type="video/mp4">
+                                Browser Anda tidak mendukung pemutaran video.
+                            </video>
+                        </div>
+                        <div class="performance-info">
+                            <h4>Sing Along (Jangan - Marion Jola)</h4>
+                            <p>Sesi penampilan musik "Jangan - Marion Jola" dari Nadine Makayla.</p>
+                        </div>
+                    </div> 
+
+                    <!-- NOTE : PENAMBAHAN BANNER DI DEPAN VIDEO BISA MENGGUNAKAN "POSTER='NAMA_FILE'"-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DETAIL -->
+    <div id="modalDetail" class="modal-overlay closingEvent">
+        <div class="modal-card">
+            <div class="modal-header">
+                <div class="modal-brand">
+                    <img src="Properties/images/Logo.png" alt="Logo" class="modal-logo">
+                    <span>INFORMASI AETHELIS</span>
+                </div>
+                <img class="exit-btn" src="WebAttributes/exit.svg" alt="Exit" onclick="closeModal('modalDetail')">
+            </div>
+            
+            <div class="banner-event">
+                <img src="Properties/images/Aethelis.PNG" alt="Banner Event Aethelis">
+            </div>
+            
+            <div class="modal-body">
+                <div class="event-title-group">
+                    <h2>AETHELIS 2027</h2>
+                    <span class="event-subtitle">Graduation Camp Angkatan 27</span>
+                </div>
+                <div class="information">
+                    <p><strong><i class="fa-regular fa-calendar"></i> Pelaksanaan:</strong> April 2027</p>
+                    <p><strong><i class="fa-solid fa-map-pin"></i> Lokasi:</strong> SMA Ignatius Global School Palembang</p>
+                    <hr class="modal-divider">
+                    <p><strong>Catatan Penting:</strong></p>
+                    <ul class="modal-list">
+                        <li>Setiap peserta wajib mengunggah/mengumpulkan Surat Izin Orang Tua.</li>
+                        <li>Membawa pakaian ganti, perlengkapan ibadah, dan obat-obatan pribadi.</li>
+                    </ul>
+                </div>
+                <button class="btn-primary btn-full" onclick="closeModal('modalDetail'); openModal('modalDaftar');">
+                    Lanjut ke Pendaftaran
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL REGISTRASI (JARAK JUDUL TERHADAP BORDER TELAH DIPERBAIKI) -->
+    <div id="modalDaftar" class="modal-overlay closingEvent">
+        <div class="modal-card">
+            <div class="modal-header">
+                <div class="modal-brand">
+                    <img src="Properties/images/Logo.png" alt="Logo" class="modal-logo">
+                    <span>PORTAL REGISTRASI</span>
+                </div>
+                <img class="exit-btn" src="WebAttributes/exit.svg" alt="Exit" onclick="closeModal('modalDaftar')">
+            </div>
+            <div class="modal-body modal-body-form">
+                <h2 class="form-title">Form Pendaftaran Peserta</h2>
+
+                <div class="permission-quest-card">
+                    <div class="quest-header">
+                        <i class="fa-solid fa-scroll quest-icon"></i>
+                        <div class="quest-info">
+                            <span class="quest-tag"><i class="fa-solid fa-triangle-exclamation"></i> SYARAT WAJIB</span>
+                            <h4>Surat Izin Orang Tua</h4>
+                        </div>
+                    </div>
+                    <p class="quest-desc">Wajib diunduh, dicetak, dan ditandatangani sebelum dikumpulkan saat registrasi.</p>
+                    
+                    <a href="Properties/docs/Surat_Izin_Orang_Tua.pdf" download class="game-btn-permission">
+                        <i class="fa-solid fa-file-signature"></i>
+                        <span>UNDUH SURAT IZIN</span>
+                    </a>
+                </div>
+
+                <div class="information-daftar">
+                    <form id="registerForm" name="google-sheet" autocomplete="off" class="form" onsubmit="handleFormSubmit(event)">
+                        <label>
+                            <input id="fullname" name="Nama" type="text" placeholder=" " required />
+                            <span>Nama Lengkap Peserta</span>
+                        </label>
+
+                        <div class="select-box">
+                            <select id="kelas" name="Kelas" required>
+                                <option value="" disabled selected>Pilih Kelas</option>
+                                <option value="XII.1 INT">XII.1 INT</option>
+                                <option value="XII.2 KOM 1">XII.2 KOM 1</option>
+                                <option value="XII.3 KOM 2">XII.3 KOM 2</option>
+                                <option value="XII.4 TEK 1">XII.4 TEK 1</option>
+                                <option value="XII.5 TEK 2">XII.5 TEK 2</option>
+                                <option value="XII.6 KED 1">XII.6 KED 1</option>
+                                <option value="XII.7 KED 2">XII.7 KED 2</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" id="btnSubmitForm" class="submit">
+                            <span>KIRIM PENDAFTARAN</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- MODAL POP-UP SUKSES -->
+    <div id="modalSukses" class="modal-overlay closingEvent">
+        <div class="modal-card modal-success-card">
+            <div class="modal-body text-center">
+                <div class="success-icon-wrapper">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <h2>Pendaftaran Berhasil!</h2>
+                <p id="successMessageText">Data Anda telah tersimpan di sistem. Jangan lupa untuk mengunduh dan mencetak Surat Izin Orang Tua.</p>
+                <button class="btn-primary btn-full" onclick="closeModal('modalSukses')">
+                    <i class="fa-solid fa-check"></i> Mengerti & Tutup
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL POP-UP RUTE MAPS (GANTI SRC IFRAME DENGAN EMBED MAPS ANDA) -->
+    <div id="modalRuteMap" class="modal-overlay closingEvent">
+        <div class="modal-card modal-large-card">
+            <div class="modal-header">
+                <div class="modal-brand">
+                    <img src="Properties/images/Logo.png" alt="Logo" class="modal-logo">
+                    <span>RUTE JALAN PAGI</span>
+                </div>
+                <img class="exit-btn" src="WebAttributes/exit.svg" alt="Exit" onclick="closeModal('modalRuteMap')">
+            </div>
+            <div class="modal-body">
+                <h2 class="form-title text-center">Peta Rute Jalan Pagi</h2>
+                <p class="text-subtitle text-center">Berikut adalah peta rute pelaksanaan jalan pagi Aethelis.</p>
+                
+                <div class="map-container">
+                    <!-- GANTI URL SRC DI BAWAH INI DENGAN URL EMBED GOOGLE MY MAPS ANDA -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m36!1m12!1m3!1d3984.4478552406654!2d104.75917476147367!3d-2.973142646990482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m21!3e2!4m5!1s0x2e3b77abf5ea07a9%3A0x753dfe8d5c2ff65d!2sIgnatius%20Global%20School%2C%20Jl.%20Mayor%20Ruslan%20No.118%2C%209%20Ilir%2C%20Kec.%20Ilir%20Tim.%20I%2C%20Kota%20Palembang%2C%20Sumatera%20Selatan%2030114!3m2!1d-2.9711486!2d104.76110779999999!4m3!3m2!1d-2.9757944!2d104.7627169!4m3!3m2!1d-2.9704962!2d104.76124329999999!4m5!1s0x2e3b77abf5ea07a9%3A0x753dfe8d5c2ff65d!2sIgnatius%20Global%20School%2C%20Jl.%20Mayor%20Ruslan%20No.118%2C%209%20Ilir%2C%20Kec.%20Ilir%20Tim.%20I%2C%20Kota%20Palembang%2C%20Sumatera%20Selatan%2030114!3m2!1d-2.9711486!2d104.76110779999999!5e0!3m2!1sid!2sid!4v1787706400786!5m2!1sid!2sid" width="100%" height="450" style="border:0; border-radius: 16px;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL POP-UP CEK STATUS PENDAFTARAN -->
+    <div id="modalCekStatus" class="modal-overlay closingEvent">
+        <div class="modal-card">
+            <div class="modal-header">
+                <div class="modal-brand">
+                    <img src="Properties/images/Logo.png" alt="Logo Nerielle" class="modal-logo">
+                    <span>VERIFIKASI PENDAFTARAN</span>
+                </div>
+                <img class="exit-btn" src="WebAttributes/exit.svg" alt="Exit" onclick="closeModal('modalCekStatus')">
+            </div>
+
+            <div class="modal-body">
+                <h2 class="form-title">Cek Status Pendaftaran</h2>
+                <p class="text-subtitle text-center">Masukkan Nama Lengkap dan Kelas Anda untuk mengecek status pendaftaran.</p>
+
+                <form id="checkStatusForm" class="form-verification" onsubmit="handleCheckStatus(event)">
+                    <div class="form-group-custom">
+                        <label class="input-label-custom" for="checkFullname">Nama Lengkap</label>
+                        <input id="checkFullname" type="text" class="input-field-custom" placeholder="Contoh: Budi Santoso" required autocomplete="off" />
+                    </div>
+                    <div class="form-group-custom">
+                        <label class="input-label-custom">Kelas</label>
+                        <div class="select-wrapper">
+                            <select id="checkKelas" class="input-field-custom" required>
+                                <option value="" disabled selected>-- Pilih Kelas Anda --</option>
+                                <option value="XII.1 INT">XII.1 INT</option>
+                                <option value="XII.2 KOM 1">XII.2 KOM 1</option>
+                                <option value="XII.3 KOM 2">XII.3 KOM 2</option>
+                                <option value="XII.4 TEK 1">XII.4 TEK 1</option>
+                                <option value="XII.5 TEK 2">XII.5 TEK 2</option>
+                                <option value="XII.6 KED 1">XII.6 KED 1</option>
+                                <option value="XII.7 KED 2">XII.7 KED 2</option>
+                            </select>
+                            <i class="fa-solid fa-chevron-down select-icon"></i>
+                        </div>
+                    </div>
+
+
+                    <button type="submit" id="btnCheckStatus" class="submit-btn-custom">
+                        <span>CEK STATUS</span>
+                    </button>
+                </form>
+
+                <!-- KOTAK HASIL VERIFIKASI -->
+                <div id="statusResultBox" class="status-result-box" style="display: none;"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script/main.js"></script>
+</body>
+</html>
